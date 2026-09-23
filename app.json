@@ -19,6 +19,16 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Allow WeatherApp to use your location for local weather."
+        }
+      ]
+    ],
+    "experiments": { "typedRoutes": true }
   }
 }
